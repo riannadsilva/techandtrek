@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: black;
@@ -40,20 +46,14 @@ body {
   font-size: 1em;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .projects-section {
   padding: 20px;
 }
 
 .project-title {
-  margin-left: 120px;
   margin-top: 50px;
   margin-bottom: 5px;
+  margin-left: 55px;
 }
 
 img.emoji {
@@ -75,6 +75,8 @@ img.emoji {
   gap: 30px; /* Reduced gap for more compact card layout */
   padding: 20px;
   padding-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .project {
@@ -133,6 +135,7 @@ img.emoji {
   .project {
     width: 45%;
   }
+  
 }
 
 @media (min-width: 992px) {
@@ -145,10 +148,8 @@ img.emoji {
   .project {
     width: 100%;
   }
-}
-
-@media (max-width: 600px) {
   .project-title {
-    margin-left: 50px;
+    text-align: left;
   }
-}
+} 
+  
