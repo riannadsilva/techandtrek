@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -71,3 +72,78 @@ p {
 
 
 
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #060042;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.title {
+  color: white; 
+  text-decoration: none;
+  font-size: 48px;
+}
+
+.navigation {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white; 
+  font-size: 1em;
+}
+
+.blog {
+  padding-top: 30px;
+  margin-left: 70px;
+  margin-right: 100px;
+}
+
+h4 {
+  padding-top: 20px;
+}
+
+p {
+  padding-top: 5px;
+}
+
+.footer {
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+
+
+
+
+>>>>>>> 5899968839f8e08b8773a08c3834de36241b08e0
