@@ -19,7 +19,7 @@ body {
 }
 
 .title a {
-  color: white; /* Set the title text to white */
+  color: white; 
   text-decoration: none;
   font-size: 2em;
 }
@@ -42,7 +42,7 @@ body {
 
 .navigation a {
   text-decoration: none;
-  color: white; /* Set navigation link color to white */
+  color: white; 
   font-size: 1em;
 }
 
@@ -53,7 +53,6 @@ body {
 .project-title {
   margin-top: 50px;
   margin-bottom: 5px;
-  /* margin-left: 55px; */
 }
 
 img.emoji {
@@ -62,7 +61,7 @@ img.emoji {
   box-shadow: none !important;
   height: 1em !important;
   width: 1em !important;
-  margin: 0 5px; !important;
+  margin: 0 5px !important; 
   vertical-align: -0.1em !important;
   background: none !important;
   padding: 0 !important;
@@ -72,7 +71,7 @@ img.emoji {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px; /* Reduced gap for more compact card layout */
+  gap: 30px; 
   padding: 20px;
   padding-bottom: 50px;
   margin-left: 10px;
@@ -80,7 +79,7 @@ img.emoji {
 }
 
 .project {
-  background-color: #ffffff; /* White background for card contrast */
+  background-color: #ffffff; 
   padding: 20px;
   margin-bottom: 40px;
   border-radius: 10px; /* Rounded corners */
