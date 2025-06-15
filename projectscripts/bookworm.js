@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
-import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
 const appSettings = {
     databaseURL: "https://bookworm-7b1aa-default-rtdb.europe-west1.firebasedatabase.app/"
@@ -16,13 +16,31 @@ const ulEl = document.getElementById("ul-el")
 let books = []
 
 btnEl.addEventListener("click", function() {
-    console.log(inputEl.value)
     books = inputEl.value
-    ulEl.innerHTML += `<li> ${books} </li>`
-
-    inputEl.value = ""
-
     push(booksInDB, books)
+    clearInputValue()
+    
+})
+
+onValue(booksInDB, function(snapshot) {
+    let booksArray = Object.values(snapshot.val())
+    clearRenderBooks()
+
+    for (let i = 0; i < booksArray.length; i++) {
+        let currentBook = booksArray[i]
+        renderBooks(currentBook)
+    }
 })
 
 
+function clearInputValue() {
+    inputEl.value = ""
+}
+
+function renderBooks(bookValue) {
+    ulEl.innerHTML += `<li> ${bookValue} </li>`
+}
+
+function clearRenderBooks() {
+    ulEl.innerHTML = ""
+}

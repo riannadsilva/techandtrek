@@ -7,6 +7,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     max-width: 320px;
     margin: 30px auto;
     text-align: center;
@@ -22,7 +23,7 @@ input {
     background-color: #DCE1EB;
     border: 0;
     padding: 2px;
-    border-radius: 8px;
+    border-radius: 4px;
     font-size: 10px;
     text-align: center;
     margin: 5px 0;
@@ -33,7 +34,12 @@ button {
     background-color: #4709b9;
     border: 0;
     padding: 2px;
-    border-radius: 8px;
+    border-radius: 4px;
     font-size: 10px;
     text-align: center;
+}
+
+li {
+    font-size: 10px;
+    text-align: left;
 }
