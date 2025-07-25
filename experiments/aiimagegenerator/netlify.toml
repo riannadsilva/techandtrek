@@ -4,4 +4,4 @@
   functions = "netlify/functions"
 
 [functions]
-  directory = "netlify/functions"
+  directory = "experiments/aiimagegenerator/netlify/functions"
