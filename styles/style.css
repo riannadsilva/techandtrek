@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #060042;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.title a {
+  color: white; 
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.navigation {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white; 
+  font-size: 1em;
+}
+
+.projects-section {
+  padding: 20px;
+}
+
+.project-title {
+  margin-top: 50px;
+  margin-bottom: 5px;
+  /* margin-left: 55px; */
+}
+
+img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 5px !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Reduced gap for more compact card layout */
+  padding: 20px;
+  padding-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.project {
+  background-color: #ffffff; /* White background for card contrast */
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow for card effect */
+  width: 100%;
+  max-width: 400px; /* Adjust max-width for a card-like appearance */
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth animation for hover effect */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures elements are spaced evenly */
+  height: 100%; 
+}
+
+.project:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+  box-shadow: 0 8px 16px #b1a9f2;; /* Enhanced shadow on hover */
+}
+
+.project h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.project p {
+  flex-grow: 1;
+  color: #666;
+  font-size: 0.9em;
+  margin: 10px 0;
+  min-height: 70px; 
+}
+
+.project button {
+  background-color: #060042;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+  max-width: 150px; /* Adjust this value to set a maximum width for the button */
+  align-self: flex-start; 
+}
+
+.project button:hover {
+  background-color: #555;
+}
+
+@media (min-width: 600px) {
+  .project {
+    width: 45%;
+  }
+  
+}
+
+@media (min-width: 992px) {
+  .project {
+    width: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .project {
+    width: 100%;
+  }
+  .project-title {
+    text-align: left;
+  }
+} 
+  
