@@ -6,7 +6,7 @@ exports.handler = async function(event, context) {
     const response = await fetch("https://api.openai.com/v1/images/generations", {
         method: "POST",
         headers: {
-            "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`,
+            "Authorization": `Bearer ${process.env.OPENAI_API_KEY_PROD}`,
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
