@@ -15,7 +15,7 @@ document.getElementById('submit-btn').addEventListener("click", async () => {
 
     try {
         // Make request with proper headers
-        const res = await fetch("https://techandtrek.de/aiimagegenerator/.netlify/functions/openai", {
+        const res = await fetch("/.netlify/functions/openai", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
