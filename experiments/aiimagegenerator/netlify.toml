@@ -1,0 +1,7 @@
+[build]
+  base = "experiments/aiimagegenerator"
+  publish = "."
+  functions = "netlify/functions"
+
+[functions]
+  directory = "experiments/aiimagegenerator/netlify/functions"
